@@ -5,15 +5,14 @@ Important remarks:
     - addKingAndQueenBonus verification method for each type of legal good
 if there is a king or queen in the order in which the players were given
     
-Implementation logic and classes used:
+Logic implementation and classes used:
 
     In the main method we take over the list of players, the cards and the number of rounds,
-and with these we create our game (Game). In order to work, the Game needs of:
+and with these we create our game (Game). In order to work, the Game needs:
     - the list of players who can be Basic (Normal Player),
-Greedy (Player subclass) or Bribe (also Player subclass) in
-depending on each one's strategy. I used these legacies because of the classes
-Bribe and Greedy use in certain situations the methods (style) of playing from
-the basic player (for example, when Bribe does not have enough money then
+Greedy (Player subclass) or Bribe (also Player subclass) depending on each one's strategy.
+I used these legacies because the classes Bribe and Greedy use in certain situations the methods (style) of playing from
+the basic player (for example, when Bribe does not have enough money, he
 creates the same box as the base player. The player class fields are
 quite intuitive since I used a list of integers of goods) for each type of
 goods we needed (goods in hand, bag and goods brought on the stall. I used some
